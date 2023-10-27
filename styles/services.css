@@ -14,13 +14,14 @@
   font-style: normal;
   font-weight: 500;
   line-height: 60.5px;
+  text-align: center;
 }
 
 .services-container {
   display: flex;
   column-gap: 24px;
   row-gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

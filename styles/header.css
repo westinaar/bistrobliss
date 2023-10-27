@@ -214,7 +214,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #7a7a7a46;
+  background-color: #ffffff91;
   backdrop-filter: blur(20px);
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
