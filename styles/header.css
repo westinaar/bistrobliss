@@ -73,6 +73,7 @@
 
 .logo a {
   text-decoration: none;
+  color: #474747;
 }
 
 .logo a h1 {
@@ -265,7 +266,6 @@
   text-decoration: none;
 }
 
-
 .bot-header .drop-down-header a button {
   padding: 12px 24px;
   border-radius: 118px;
@@ -276,6 +276,7 @@
   font-weight: 700;
   line-height: 24px;
   background-color: transparent;
+  color: #474747;
   border: 1.5px solid #212121;
 }
 
