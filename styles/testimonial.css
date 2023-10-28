@@ -128,3 +128,13 @@
 		
 	}
 }
+
+@media(max-width: 500px) {
+  .testimonial-content {
+    overflow: scroll;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    justify-content: start;
+    
+  }
+}
