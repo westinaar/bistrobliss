@@ -105,7 +105,11 @@
   cursor: pointer;
 }
 
-.bot-header .navbar-header li a {
+.bot-header .navbar-header a {
+  text-decoration: none;
+}
+
+.bot-header .navbar-header a li {
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
