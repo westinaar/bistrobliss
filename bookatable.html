@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/bookatabel/bookatable.css">
 </head>
 <body>
   <header>
@@ -92,7 +93,52 @@
     </div>
   </header>
   <main>
-
+    <div class="bookatable">
+      <div class="hero">
+        <div class="titles">
+          <h2>Book A Table</h2>
+          <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+        </div>
+      </div>
+      <div class="map">
+        <form action="POST" netlify>
+          <div class="row">
+            <div class="row-1">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+            <div class="row-1">
+              <label for="time">Time</label>
+              <input type="time" name="time" id="time" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-1">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="row-1">
+              <label for="phone">Phone</label>
+              <input type="number" name="phone" id="phone" required pattern="[0]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="x-xxx-xxx-xxx">
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-1">
+              <label for="person">Total Person</label>
+              <select name="person" id="person">
+                <option value="1">1 person</option>
+                <option value="2">2 person</option>
+                <option value="3">3 person</option>
+                <option value="4">4 person</option>
+                <option value="5">5 person</option>
+                <option value="6">6 person</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Book A Tabel</button>
+        </form>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footer">
