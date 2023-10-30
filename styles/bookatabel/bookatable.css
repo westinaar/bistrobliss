@@ -1,5 +1,8 @@
 .bookatable {
   background-color: #F9F9F7;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
 .titles {
@@ -7,6 +10,7 @@
   flex-direction: column;
   row-gap: 24px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .titles h2 {
@@ -29,6 +33,7 @@
   font-weight: 400;
   line-height: 28px;
   inline-size: 540px;
+  margin: 0;
 }
 
 .map {
@@ -38,6 +43,7 @@
   background: url(../../images/pages/book/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .map img {
@@ -54,18 +60,21 @@ form {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  flex-wrap: wrap;
   
 }
 
 form .row {
   display: flex;
   column-gap: 24px;
+  flex-wrap: wrap;
 }
 
 form .row-1 {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  
 }
 
 .row-1 label {
@@ -139,7 +148,21 @@ type::placeholder {
   line-height: 24px; 
 }
 
-.row-1 select {
+.row-person {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-person label {
+  color: #2C2F24;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.row-person select {
   border-radius: 72px;
   border: 1px solid #DBDFD0;
   background: #FFF;
@@ -148,17 +171,14 @@ type::placeholder {
   font-family: DM Sans;
   font-size: 16px;
   outline: none;
-  width: 720px;
-  margin: 0 auto;
   appearance: none;
 }
 
-.row-1 select option {
+select option {
   color: #2C2F24;
   font-family: DM Sans;
   font-size: 16px;
   outline: none;
-  width: 720px;
   margin: 0 auto;
   appearance: none;
 }
@@ -174,11 +194,28 @@ form button {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  max-width: 720px;
+ 
   cursor: pointer;
 }
 
 form button:hover {
   color: #AD343E;
   background-color: #fff;
+}
+
+@media(max-width: 590px) {
+  .titles p {
+    inline-size: 300px;
+  }
+  form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media(max-width: 380px) {
+  form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
