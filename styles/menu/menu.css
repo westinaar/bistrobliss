@@ -84,17 +84,18 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   align-self: center;
+  justify-self: center;
 }
 
 .card {
-  width: 306px;
-  height: 428px;
   display: flex;
   flex-direction: column;
   border: 1.5px solid #DBDFD0;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   align-items: center;
+  width: 306px;
+  height: 428px;
 }
 
 

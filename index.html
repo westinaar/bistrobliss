@@ -134,7 +134,7 @@
               <p>Breakfast</p>
               <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
             </div>
-            <button><a href="">Explore Menu</a></button>
+            <button onclick="redirectToBreak()">Explore Menu</button>
           </div>
           <div class="browse-menu-options-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
@@ -145,7 +145,7 @@
               <p>Main Dishes</p>
               <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
             </div>
-            <button><a href="">Explore Menu</a></button>
+            <button onclick="redirectToMain()">Explore Menu</button>
           </div>
           <div class="browse-menu-options-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
@@ -156,7 +156,7 @@
               <p>Drinks</p>
               <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
             </div>
-            <button><a href="">Explore Menu</a></button>
+            <button onclick="redirectToDrink()">Explore Menu</button>
           </div>
           <div class="browse-menu-options-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
@@ -168,7 +168,7 @@
               <p>Desserts</p>
               <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
             </div>
-            <button><a href="">Explore Menu</a></button>
+            <button onclick="redirectToDessert()">Explore Menu</button>
           </div>
         </div>
       </div>
@@ -475,6 +475,19 @@
     toggleBtnIcon.classList = isOpen
       ? 'fa-solid fa-xmark'
       : 'fa-solid fa-bars'
+  }
+
+  function redirectToBreak() {
+    window.location.href = "menu.html?afisare=breakfast"
+  }
+  function redirectToDrink() {
+    window.location.href = "menu.html?afisare=drink"
+  }
+  function redirectToMain() {
+    window.location.href = "menu.html?afisare=maindish"
+  }
+  function redirectToDessert() {
+    window.location.href = "menu.html?afisare=dessert"
   }
 </script>
 </html>

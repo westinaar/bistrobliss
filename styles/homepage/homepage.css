@@ -218,20 +218,18 @@
   margin: 0;
 }
 
-.browse-menu .browse-menu-options .browse-menu-options-box button {
+
+.browse-menu .browse-menu-options .browse-menu-options-box button  {
+  text-decoration: none;
   border: none;
   background-color: transparent;
-  
-}
-
-.browse-menu .browse-menu-options .browse-menu-options-box button a {
-  text-decoration: none;
   color: #AD343E;
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; 
+  line-height: 24px;
+  cursor: pointer;
 }
 
 @media(max-width: 780px) {

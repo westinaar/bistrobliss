@@ -134,7 +134,6 @@
 .bot-header .navbar-button:hover {
   cursor: pointer;
   color: #fff;
-  border: none;
   background-color: #AD343E;
   border: 1.5px solid #fff;
 }

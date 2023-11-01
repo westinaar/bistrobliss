@@ -102,15 +102,15 @@
             <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
           </div>
           <div class="buttons">
-            <button class="btn active-btn">All</button>
-            <button class="btn">Breakfast</button>
-            <button class="btn">Main Dishes</button>
-            <button class="btn">Drinks</button>
-            <button class="btn">Desserts</button>
+            <button class="btn active-btn" onclick="allOption()" id="all-btn">All</button>
+            <button class="btn" onclick="breakFast()" id="break-btn">Breakfast</button>
+            <button class="btn" onclick="mainDish()" id="main-btn">Main Dishes</button>
+            <button class="btn" onclick="drink()" id="drink-btn">Drinks</button>
+            <button class="btn" onclick="dessert()" id="dessert-btn">Desserts</button>
           </div>
         </div>
         <div class="card-container">
-          <div class="card">
+          <div class="card breakfast">
             <div class="card-img">
               <img src="images/pages/menu/eggs.jpg">
             </div>
@@ -120,7 +120,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card maindish">
             <div class="card-img">
               <img src="images/pages/menu/pizza.jpg">
             </div>
@@ -130,7 +130,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card drink">
             <div class="card-img">
               <img src="images/pages/menu/coktail.jpg">
             </div>
@@ -140,7 +140,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card dessert">
             <div class="card-img">
               <img src="images/pages/menu/cake.jpg">
             </div>
@@ -150,7 +150,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card drink">
             <div class="card-img">
               <img src="images/pages/menu/lemonade.jpg">
             </div>
@@ -160,7 +160,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card dessert">
             <div class="card-img">
               <img src="images/pages/menu/ice-creeam.jpg">
             </div>
@@ -170,7 +170,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card maindish">
             <div class="card-img">
               <img src="images/pages/menu/burger.jpg">
             </div>
@@ -180,7 +180,7 @@
               <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card dessert">
             <div class="card-img">
               <img src="images/pages/menu/waffles.jpg">
             </div>
@@ -299,6 +299,137 @@
     toggleBtnIcon.classList = isOpen
       ? 'fa-solid fa-xmark'
       : 'fa-solid fa-bars'
-  }
+  };
+
+  const breakFasts = document.getElementsByClassName("breakfast");
+  const drinks = document.getElementsByClassName("drink");
+  const mainDishes = document.getElementsByClassName("maindish");
+  const desserts = document.getElementsByClassName("dessert");
+
+  const allBtn = document.getElementById("all-btn");
+  const breakBtn = document.getElementById("break-btn");
+  const mainBtn = document.getElementById("main-btn");
+  const drinkBtn = document.getElementById("drink-btn");
+  const dessertBtn = document.getElementById("dessert-btn");
+
+  function allOption() {
+    Array.from(breakFasts).forEach(element =>{
+      element.style.display = "flex";
+    });
+    Array.from(mainDishes).forEach(element => {
+      element.style.display = "flex";
+    });
+    Array.from(drinks).forEach(element => {
+      element.style.display = "flex";
+    });
+    Array.from(desserts).forEach(element => {
+      element.style.display = "flex";
+    });
+    allBtn.classList.add("active-btn");
+    breakBtn.classList.remove("active-btn");
+    mainBtn.classList.remove("active-btn");
+    drinkBtn.classList.remove("active-btn");
+    dessertBtn.classList.remove("active-btn");
+  };
+
+  function breakFast() {
+    Array.from(breakFasts).forEach(element => {
+      element.style.display = "flex";
+    });
+    Array.from(drinks).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(mainDishes).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(desserts).forEach(element => {
+      element.style.display = "none";
+    });
+    breakBtn.classList.add("active-btn");
+    allBtn.classList.remove("active-btn");
+    mainBtn.classList.remove("active-btn");
+    drinkBtn.classList.remove("active-btn");
+    dessertBtn.classList.remove("active-btn");
+  };
+
+  function mainDish() {
+    Array.from(mainDishes).forEach(element => {
+      element.style.display = "flex"
+    });
+    Array.from(breakFasts).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(drinks).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(desserts).forEach(element => {
+      element.style.display = "none";
+    });
+    mainBtn.classList.add("active-btn");
+    breakBtn.classList.remove("active-btn");
+    allBtn.classList.remove("active-btn");
+    drinkBtn.classList.remove("active-btn");
+    dessertBtn.classList.remove("active-btn");
+  };
+
+  function drink() {
+    Array.from(drinks).forEach(element => {
+      element.style.display = "flex"
+    });
+    Array.from(breakFasts).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(mainDishes).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(desserts).forEach(element => {
+      element.style.display = "none";
+    });
+    drinkBtn.classList.add("active-btn")
+    allBtn.classList.remove("active-btn")
+    breakBtn.classList.remove("active-btn")
+    mainBtn.classList.remove("active-btn")
+    dessertBtn.classList.remove("active-btn")
+
+  };
+
+  function dessert() {
+    Array.from(desserts).forEach(element => {
+      element.style.display = "flex"
+    });
+    Array.from(breakFasts).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(mainDishes).forEach(element => {
+      element.style.display = "none";
+    });
+    Array.from(drinks).forEach(element => {
+      element.style.display = "none";
+    });
+    dessertBtn.classList.add("active-btn");
+    breakBtn.classList.remove("active-btn");
+    mainBtn.classList.remove("active-btn");
+    drinkBtn.classList.remove("active-btn");
+    allBtn.classList.remove("active-btn");
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const urlName = new URLSearchParams(window.location.search);
+  const numeAfisare = urlName.get('afisare');
+
+  if (numeAfisare === 'breakfast') {
+    return breakFast();
+  };
+  if (numeAfisare === 'drink') {
+    return drink()
+  };
+  if (numeAfisare === 'maindish') {
+    return mainDish()
+  };
+  if (numeAfisare === 'dessert') {
+    return dessert()
+  };
+});
+
 </script>
 </html>
