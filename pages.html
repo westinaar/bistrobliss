@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/pages/pages.css">
 </head>
 <body>
   <header>
@@ -92,7 +93,122 @@
     </div>
   </header>
   <main>
-    
+    <div class="blog">
+      <div class="title">
+        <h2>Our Blog & Articles</h2>
+        <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+      </div>
+      <div class="cards">
+        <div class="cards-content">
+          <div class="cards-content-photo" onclick="redirectToBlogDet()">
+            <img src="images/blog/burger.jpeg">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p onclick="redirectToBlogDet()">The secret tips & tricks to prepare a perfect burger</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/roll pasta.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>Exclusive baking lessons from the pastry king</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/french.jpeg">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>How to prepare the perfect fries in an air fryer</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/tenders.jpeg">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>How to prepare delicious chicken tenders</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/gadgets.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>5 great cooking gadgets you can buy to save time</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/cheese-cake.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>7 delicious cheesecake recipes you can prepare</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/pizza-restaurants.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>5 great pizza restaurants you should visit this city</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/pizza.jpeg">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>How to prepare a perfect pizza</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/dessert1.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>Top 20 simple and quick desserts for kids</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/pexels-marta-dzedyshko-2067396 1.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>5 great cooking gadgets you can buy to save time</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/dessert2.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>Top 20 simple and quick desserts for kids</p>
+          </div>
+        </div>
+        <div class="cards-content">
+          <div class="cards-content-photo">
+            <img src="images/blog/sushi2.png">
+          </div>
+          <div class="cards-content-text">
+            <p>January 3, 2023</p>
+            <p>How to prepare a delicious gluten free sushi</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footer">
@@ -177,6 +293,10 @@
     toggleBtnIcon.classList = isOpen
       ? 'fa-solid fa-xmark'
       : 'fa-solid fa-bars'
+  }
+
+  function redirectToBlogDet() {
+    window.location.href = "blog-details.html"
   }
 </script>
 </html>
